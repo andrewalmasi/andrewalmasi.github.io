@@ -1,0 +1,4 @@
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+Sitemap: https://andrewalmasi.github.io/sitemap-index.xml

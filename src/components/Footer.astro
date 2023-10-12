@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="mb-3 mt-4">
+    <div class="flex flex-row">
+      <div class="basis-3/4 text-left">
+        <div class="flex flex-row mb-2">
+          <a
+            class="mr-2 hover:text-sky-700 dark:text-white dark:hover:text-sky-700"
+            href="/blog">Blog</a
+          >
+          <a
+            class="mr-2 hover:text-sky-700 dark:text-white dark:hover:text-sky-700"
+            href="/about">About</a
+          >
+        </div>
+        <div>
+          &copy; {currentYear} Andrew Arshia Almasi.
+        </div>
+      </div>
+      <div class="basis-1/4 justify-end flex flex-row">
+        <a
+          href="mailto:andrewalmasi@gmail.com"
+          class="ml-4 hover:text-sky-700 dark:text-white dark:hover:text-sky-950"
+          aria-label="Email"
+          rel="noopener"
+        >
+          <Icon name="fa-solid:envelope" />
+        </a>
+        <a
+          href="https://github.com/arrrshia"
+          class="ml-4 hover:text-sky-700 dark:text-white dark:hover:text-sky-700"
+          aria-label="Github"
+          rel="noopener"
+        >
+          <Icon name="fa-brands:github" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<style>
+  [astro-icon] {
+    height: 24px;
+  }
+</style>

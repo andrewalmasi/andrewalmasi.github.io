@@ -8,7 +8,7 @@ import webmanifest from 'astro-webmanifest';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://andrewalmasi.github.io",
+  site: "https://andrewalmasi.com",
   experimental: {
     integrations: true,
   },
